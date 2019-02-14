@@ -6,12 +6,12 @@ I want to enter my house price
 Background:
   Given I visit the land and buildings transaction tax page
 
-Scenario Outline: land buildings transaction tax for first home
-  When I enter my house price with <price>
+Scenario Outline: stamp duty for first home
+  When I enter a house price of "<price>"
   And I am a first time buyer
   And I click next
   Then I see the title for the results page
-  Then I see the land buildings transaction tax I will have to pay is "£<duty>"
+  Then I see the stamp duty I will have to pay is "£<duty>"
 
 Examples:
   | price       | duty      |
