@@ -10,12 +10,11 @@ Scenario Outline: stamp duty for first home
   When I enter a house price of "<price>"
   And I am a first time buyer
   And I click next
-  Then I see the title for the results page
-  Then I see the stamp duty I will have to pay is "£<duty>"
+  Then I see the title for the "Land and Buildings Transaction Tax (LBTT)" results page
+  Then I see the stamp duty I will have to pay is "<duty>"
 
 Examples:
   | price       | duty      |
-  |----------- -|-----------|
   |  £120,000   |  £0       |
   |  £175,000   |  £0       |
   |  £201,000   |  £520     |
