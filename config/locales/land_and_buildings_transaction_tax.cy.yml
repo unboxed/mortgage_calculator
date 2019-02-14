@@ -19,6 +19,7 @@ cy:
       label: "Rwy'n"
       option_prompt: "dewiswch opsiwn"
       option_isNextHome: "prynu fy nghartref nesaf"
+      option_isFTB: prynu am y tro cyntaf
       option_isSecondHome: "prynu eiddo atodol neu eiddo prynu-i-osod"
       tooltip_html: "Bydd unrhyw un sy’n prynu cartref ychwanegol gan gynnwys eiddo prynu i osod dros £40,000 mewn gwerth yn gorfod talu ffi ychwanegol o 3% ar ben pob band Treth Trafodiadau Tir ac Adeiladau."
     recalculate: Ailgyfrifo

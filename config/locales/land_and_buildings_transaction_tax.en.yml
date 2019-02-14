@@ -18,6 +18,7 @@ en:
       label: I am
       option_prompt: please select an option
       option_isNextHome: buying my next home
+      option_isFTB: a first-time buyer
       option_isSecondHome: buying an additional or buy-to-let property
       tooltip_html: "Anyone purchasing an additional home including buy to let properties over the value of £40,000 will have to pay an extra 3% surcharge on top of each Land and Buildings Transaction Tax band"
     recalculate: Recalculate
