@@ -20,6 +20,8 @@ module MortgageCalculator
       { threshold: nil, rate: 12 }
     ].freeze
 
+    FIRST_TIME_BUYER_THRESHOLD = 760_000.freeze
+
     def first_time_ineligible?
       first_time_buy? && price > FIRST_TIME_BUYER_THRESHOLD
     end

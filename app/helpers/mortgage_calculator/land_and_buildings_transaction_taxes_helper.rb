@@ -25,6 +25,16 @@ module MortgageCalculator
       }.to_json
     end
 
+    def outside_first_time_rate?
+      @lbtt.first_time_ineligible?
+    end
+
+    def ftb_threshold
+      formatted_currency(
+        MortgageCalculator::LandAndBuildingsTransactionTax::FIRST_TIME_BUYER_THRESHOLD
+      )
+    end
+
     private
 
     def maximum_band(num)

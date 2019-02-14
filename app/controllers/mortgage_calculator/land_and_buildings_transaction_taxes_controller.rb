@@ -1,7 +1,9 @@
 module MortgageCalculator
-  class LandAndBuildingsTransactionTaxesController < ::MortgageCalculator::TransactionTaxCalculatorController
-    def calculator
-      MortgageCalculator::LandAndBuildingsTransactionTax
+  class LandAndBuildingsTransactionTaxesController < ::MortgageCalculator::ApplicationController
+    CALCULATOR = MortgageCalculator::LandAndBuildingsTransactionTax
+
+    def show
+      @lbtt = CALCULATOR.new
     end
 
     def i18n_locale_namespace

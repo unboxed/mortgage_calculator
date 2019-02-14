@@ -13,6 +13,7 @@ en:
       It also works out how much you’ll pay on any additional property purchase over £40,000, like a buy to let or second home, which attracts an extra 3% Additional Dwelling Supplement (ADS)."
     heading_results: "Land and Buildings Transaction Tax (LBTT) calculator - Your Results"
     title: "Calculate the Land and Buildings Transaction Tax on your residential property in Scotland"
+    subtitle: Stamp Duty Land Tax (SDLT) is a tax on properties bought in Scotland. You’ll need to pay it when you buy a residential property that costs more than £125,000. Use this calculator to work out how much Land and Buildings Transaction Tax you’ll need to pay on your new home. You can also use it to work out how much you’ll pay on an additional property that costs more than %{amount}, like a buy to let or second home, which attracts an extra 3% charge.
     next: Next
     select:
       label: I am
@@ -41,6 +42,7 @@ en:
       sentence_prefix: "The effective tax rate is"
       sentence_suffix: "%"
       click_to_expand: Click to expand.
+      FTB_conditional: "You are not eligible for relief on Land and Buildings Transaction Tax because the property value is greater than %{amount}."
     table:
       property_price_header: "Purchase price of property"
       rate_header: "Rate of Land and Buildings Transaction Tax (LBTT)"
