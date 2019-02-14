@@ -1,5 +1,12 @@
-<p>In stamp_duties/form_step1.html</p>
-<%= form_for @stamp_duty, url: stamp_duty_path, html: { name: 'stamp_duty_form', role: 'form', class: 'form step_one stamp-duty__step-one', novalidate: '' } do |f| %>
+<p>In land_buildings_etc/form_step1.html</p>
+<%= form_for resource, 
+  url: stamp_duty_path,
+  html: { 
+    name: 'stamp_duty_form',
+    role: 'form',
+    class: 'form step_one stamp-duty__step-one',
+    novalidate: ''
+  } do |f| %>
 
   <%= f.label :buyer_type, class: 'stamp-duty__buyer-type' do %>
     <%= t('stamp_duty.select.label') %>
@@ -29,7 +36,7 @@
     <span class="stamp-duty__input-wrapper stamp-duty__input-wrapper--inline">
       <span class="stamp-duty__input--unit">£</span>
       <%= f.text_field :price,
-                       :value => @stamp_duty.price_formatted,
+                       :value => @resource.price_formatted,
                        "autofocus" => '',
                        "ng-model" => "stampDuty.propertyPrice",
                        "placeholder" => "0",
