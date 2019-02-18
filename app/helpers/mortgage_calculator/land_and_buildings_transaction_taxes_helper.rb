@@ -20,8 +20,10 @@ module MortgageCalculator
       calculator = MortgageCalculator::LandAndBuildingsTransactionTax
       {
         standard: calculator::STANDARD_BANDS,
+        ftb: calculator::FIRST_TIME_BUYER_BANDS,
         second_home_tax_rate: calculator::SECOND_HOME_ADDITIONAL_TAX,
-        second_home_threshold: calculator::SECOND_HOME_THRESHOLD
+        second_home_threshold: calculator::SECOND_HOME_THRESHOLD,
+        first_time_buyer_threshold: calculator::FIRST_TIME_BUYER_THRESHOLD
       }.to_json
     end
 
