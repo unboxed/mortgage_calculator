@@ -25,3 +25,24 @@ Examples:
   |  £743,000   |  £47,050  |
   |  £750,000   |  £47,750  |
   |  £1,200,000 |  £101,750 |
+
+@javascript
+Scenario Outline: stamp duty for first home
+  When I enter a house price of "<price>"
+  And I am a first time buyer
+  And I click next
+  
+  Then I see the stamp duty I will have to pay is "<duty>"
+
+Examples:
+  | price       | duty      |
+  |  £120,000   |  £0       |
+  |  £175,000   |  £0       |
+  |  £201,000   |  £520     |
+  |  £250,000   |  £1,500   |
+  |  £300,000   |  £4,000   |
+  |  £325,000   |  £5,250   |
+  |  £400,000   |  £12,750  |
+  |  £743,000   |  £47,050  |
+  |  £750,000   |  £47,750  |
+  |  £1,200,000 |  £101,750 |

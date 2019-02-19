@@ -10,6 +10,10 @@ module MortgageCalculator
       rate + LandAndBuildingsTransactionTax::SECOND_HOME_ADDITIONAL_TAX
     end
 
+    def first_time_buyer?
+      @lbtt.first_time_buy?
+    end
+
     def second_home_threshold
       formatted_currency(
         MortgageCalculator::LandAndBuildingsTransactionTax::SECOND_HOME_THRESHOLD
