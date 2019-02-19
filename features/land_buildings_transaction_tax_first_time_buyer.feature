@@ -6,7 +6,7 @@ I want to enter my house price
 Background:
   Given I visit the land and buildings transaction tax page
 
-Scenario Outline: stamp duty for first home
+Scenario Outline: land and buildings transaction tax for first home
   When I enter a house price of "<price>"
   And I am a first time buyer
   And I click next
@@ -27,7 +27,7 @@ Examples:
   |  £1,200,000 |  £101,750 |
 
 @javascript
-Scenario Outline: stamp duty for first home
+Scenario Outline: land and buildings transaction tax for first home
   When I enter a house price of "<price>"
   And I am a first time buyer
   And I click next
